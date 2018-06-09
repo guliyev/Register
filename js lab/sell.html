@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+        <label for="name" >Name</label>
+        <input type="text" id="name"><br>
+        <label for="price" >Price</label>
+        <input type="price" id="price"><br>
+        <label for="model" >Model</label>
+        <input type="text" id="model"><br>
+        <label for="color" >Color</label>
+        <input type="text" id="color"><br>
+        <input type="button" onclick="visualize()" value="Add Product">
+       
+
+
+        <script>
+       
+
+   let easy=[];
+
+
+        class Product {
+        constructor(name, price, model, color){
+            this._name = name;
+            this._price = price;
+            this._model=model;
+            this._color=color;
+
+        }   
+        set Name(name){
+            if(name.lenght>3)
+            this._name=name;
+        }
+        get Name(){
+            return this._name;
+        }
+
+        set Price(price){
+            if(price.lenght>0)
+            this._price;
+        }
+        get Price(){
+            return this._price;
+        }
+        set Model(model){
+            if(model.lenght>0)
+            this._model=model;
+        }
+        get Model(){
+            return this._model;
+        }
+
+        set Color(color){
+            if(color.lenght>0)
+            this._color;
+        }
+        get Color(){
+            return this._color;
+        }
+      }
+
+    function add(){
+        let Name=name;
+        let Price=price;
+        let Model=model;
+        let Color=color;
+
+        
+    }
+        </script>
+
+    
+</body>
+</html>
